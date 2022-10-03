@@ -1,12 +1,12 @@
 
-def maximizar_troca_de_figurinhas(figurinhas_da_maria, figurinhas_do_joao):
+def maximizar_troca_de_figurinhas(figurinhas_da_maria, figurinhas_da_joao):
     troca = 0
     repete = 0
     for figurinhas_da_maria in figurinhas_da_maria:
         troca += 1      
-        if figurinhas_da_maria not in figurinhas_do_joao:
-            x = figurinhas_do_joao
-            figurinhas_do_joao = figurinhas_da_maria
+        if figurinhas_da_maria not in figurinhas_da_joao:
+            x = figurinhas_da_joao
+            figurinhas_da_joao = figurinhas_da_maria
             figurinhas_da_maria = x
         else:
             troca -= 1 
